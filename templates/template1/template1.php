@@ -29,8 +29,8 @@ if (!$obituary) {
 <h1>In Loving Memory</h1>
 <p><?=htmlspecialchars($obituary['relation'])?> of the family</p>
 
-<?php if ($obituary['photo'] && file_exists(__DIR__ . "/../../../uploads/".$obituary['photo'])): ?>
-<img src="../../../uploads/<?htmlspecialchars($obituary['photo'])?>" alt="Photo" class="photo" />
+<?php if ($obituary['photo'] && file_exists(__DIR__ . "/../../uploads/".$obituary['photo'])): ?>
+  <img src="/obituary_website/uploads/<?=htmlspecialchars($obituary['photo'])?>" alt="Photo" class="photo" />
 <?php endif ?>
 
 <div class="details">
