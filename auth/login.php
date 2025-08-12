@@ -35,7 +35,8 @@ if (isset($_POST['remember'])) {
 ?>
 
 <?php include("../includes/head.php"); ?>
-<div class="container mt-5">
+
+<div class="container mt-5" style="max-width: 450px;">
 <h2>Login</h2>
 <?php if(isset($errorMsg)) echo "<div class='alert alert-danger'>$errorMsg</div>"; ?>
 <form method="post">
