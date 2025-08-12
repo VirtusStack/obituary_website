@@ -1,0 +1,55 @@
+body {
+  font-family: 'Georgia', serif;
+  background: #f9f7f6;
+  color: #333;
+  margin: 0; padding: 2rem;
+}
+
+.template1-container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border: 2px solid #ccc;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+  color: #555;
+  font-style: italic;
+}
+
+.relation {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #777;
+}
+
+.photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #bbb;
+  margin-bottom: 1.5rem;
+}
+
+.details p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.bio {
+  margin-top: 1.5rem;
+  font-style: italic;
+  color: #666;
+}
+
+footer {
+  margin-top: 2rem;
+  font-weight: bold;
+  color: #999;
+}
