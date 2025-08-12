@@ -210,7 +210,7 @@ if (!isset($_SESSION['user_id'])) {
 </div>
 
 <div class="mt-4">
-<button type="submit" class="btn btn-success">Save Obituary</button>
+<button type="submit" class="btn btn-success">Next</button>
 </div>
 </form>
 
