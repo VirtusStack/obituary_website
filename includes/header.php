@@ -47,6 +47,6 @@ $isLoggedIn = isset($_SESSION['user_id']);
 </li>
 <?php endif; ?>
  </ul>
+</div>
  </div>
-  </div>
 </nav>
