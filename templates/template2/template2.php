@@ -1,16 +1,15 @@
 <?php
 require_once __DIR__ . "/../../config.php";
-session_start();
 
-if (!isset($_GET['id'])) {
+if (!isset($_GET['obituary_id'])) {
     die("Obituary ID missing");
 }
 
-$id = (int)$_GET['id'];
+$obituary_id = (int)$_GET['obituary_id'];
 
 // Fetch obituary details
 $stmt = $conn->prepare("SELECT * FROM obituaries WHERE id = ?");
-$stmt->execute([$id]);
+$stmt->execute([$obituary_id]);
 $obituary = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if (!$obituary) {
