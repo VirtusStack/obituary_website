@@ -214,13 +214,6 @@ if (!isset($_SESSION['user_id'])) {
 </div>
 </form>
 
-<?php if (isset($_GET['saved']) && $_GET['saved'] == 1): ?>
-<div class="mt-4">
-<a href="download_obituary.php?id=<?php echo $_GET['id']; ?>" class="btn btn-primary">Download Obituary Template</a>
-<a href="download_prarthana.php?id=<?php echo $_GET['id']; ?>" class="btn btn-warning">Download Prarthana Sabha Template</a>
-</div>
-<?php endif; ?>
-</div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
