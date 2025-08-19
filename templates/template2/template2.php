@@ -22,7 +22,8 @@ if (!$obituary) {
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Obituary - Template 2</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/obituary_website/templates/template2/style.css?v=<?php echo time(); ?>" />
+
 </head>
 <body>
   <div class="template2-card">
@@ -36,7 +37,6 @@ if (!$obituary) {
 
     <div class="content-side">
       <h2><?=htmlspecialchars($obituary['full_name'])?></h2>
-      <p class="relation">Beloved <?=htmlspecialchars($obituary['relation'])?></p>
 
       <div class="dates">
         <span><strong>DOB:</strong> <?=htmlspecialchars($obituary['dob'])?></span> | 
