@@ -7,6 +7,7 @@ if (!isset($_GET['obituary_id'])) {
 
 $obituary_id = (int)$_GET['obituary_id'];
 
+
 // Fetch obituary details
 $stmt = $conn->prepare("SELECT * FROM obituaries WHERE id = ?");
 $stmt->execute([$obituary_id]);
@@ -27,7 +28,6 @@ if (!$obituary) {
 <body>
 <div class="template1-container">
 <h1>In Loving Memory</h1>
-<p><?=htmlspecialchars($obituary['relation'])?> of the family</p>
 
 <?php if ($obituary['photo'] && file_exists(__DIR__ . "/../../uploads/".$obituary['photo'])): ?>
   <img src="/obituary_website/uploads/<?=htmlspecialchars($obituary['photo'])?>" alt="Photo" class="photo" />
@@ -50,6 +50,7 @@ if (!$obituary) {
 
 <footer>May the soul rest in eternal peace</footer>
 </div>
+
 </body>
 </html>
 
