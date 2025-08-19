@@ -1,41 +1,61 @@
 body {
   font-family: 'Arial', sans-serif;
-  background: #f2f6f8;
+  background: #f7f7f7;
   margin: 0;
   padding: 2rem;
-  color: #222;
+  color: #333;
 }
 
 .template2-card {
+  position: relative;
   display: flex;
   max-width: 800px;
   margin: 0 auto;
   background: white;
   border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* subtle floral overlay */
+.template2-card {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  background: url("/obituary_website/templates/template2/floral.png") no-repeat center center;
+  background-size: cover;
+  border-radius: 12px;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
   overflow: hidden;
 }
 
+
+.photo-side,
+.content-side {
+  position: relative;
+  z-index: 1;
+}
+
 .photo-side {
-  width: 300px;
-  background: #004080;
+  width: 250px;
+  background: transparent; 
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 
+
 .photo-side img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 0 0 0 12px;
 }
 
 .photo-placeholder {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 600;
+  color: #eee;
+  font-size: 1.3rem;
+  font-weight: 500;
   padding: 2rem;
   text-align: center;
 }
@@ -49,45 +69,47 @@ h2 {
   margin-top: 0;
   margin-bottom: 0.2rem;
   font-weight: 700;
-  font-size: 2.4rem;
-  color: #004080;
+  font-size: 2.2rem;
+  font-family: 'Georgia', serif;  /* more formal */
+  color: #2c3e50;
 }
 
 .relation {
   font-style: italic;
-  color: #555;
+  color: #666;
   margin-bottom: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .dates {
   font-weight: 600;
   margin-bottom: 1.2rem;
-  color: #666;
+  color: #555;
   font-size: 1rem;
 }
 
 .content-side p {
   margin: 0.3rem 0;
-  font-size: 1.1rem;
-  line-height: 1.4;
+  font-size: 1.05rem;
+  line-height: 1.5;
 }
 
 .bio {
   margin-top: 1.5rem;
   font-style: italic;
   color: #444;
-  font-size: 1.15rem;
-  border-left: 4px solid #004080;
+  font-size: 1.1rem;
+  border-left: 3px solid #2c3e50;
   padding-left: 12px;
 }
 
 footer {
-  margin-top: 2.2rem;
-  font-weight: 700;
-  color: #888;
-  font-size: 1.1rem;
+  margin-top: 2rem;
+  font-weight: 500;
+  color: #777;
+  font-size: 1rem;
   text-align: center;
   border-top: 1px solid #eee;
   padding-top: 1rem;
 }
+
